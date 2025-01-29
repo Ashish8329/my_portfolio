@@ -1,0 +1,26 @@
+# Node modules (dependencies)
+node_modules/
+
+# Build files
+dist/
+build/
+
+# Logs and temp files
+*.log
+*.cache
+
+# Environment variables (keep credentials private)
+.env
+.env.local
+.env.development
+.env.production
+
+# Editor/OS-specific files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Yarn & npm files
+.yarn/
+.pnp.*
