@@ -9,7 +9,7 @@ import crown from "../../img/crown.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
+import LeetCode from "../../img/leetcode.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
@@ -28,9 +28,9 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Andrew Thomas</span>
+          <span>Ashish Auti</span>
           <span>
-            Frontend Developer with high level of experience in web designing
+            Backend Developer with high level of experience in web designing
             and development, producting the Quality work
           </span>
         </div>
@@ -39,9 +39,16 @@ const Intro = () => {
         </Link>
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+          <a href="https://github.com/Ashish8329">
+            <img src={Github} alt="Github" />
+          </a>
+          <a href="https://leetcode.com/Ashishauti/">
+            <img src={LeetCode} alt="leetcode" />
+          </a>
+          <a href="https://www.linkedin.com/in/ashish-auti-069346254">
+            <img src={LinkedIn} alt="Linkdin" />
+          </a>
+          
         </div>
       </div>
       {/* right image side */}
@@ -75,7 +82,7 @@ const Intro = () => {
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+          <FloatinDiv img={thumbup} text1="Open Source" text2="Contributer" />
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
