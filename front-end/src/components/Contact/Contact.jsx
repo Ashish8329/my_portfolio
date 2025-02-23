@@ -9,19 +9,21 @@ const Contact = () => {
   const [done, setDone] = useState(false)
   const sendEmail = (e) => {
     e.preventDefault();
+    console.log("Send button clicked!");
 
     emailjs
       .sendForm(
-        "service_2mu5xtl",
-        "template_m5udu2c",
+        "service_nttu2gs",
+        "template_u6r6th7",
         form.current,
-        "VLwg1ltOWvnCYAiK_"
+        "x0pdFgbC_NIeDwV-J"
       )
       .then(
         (result) => {
           console.log(result.text);
           setDone(true);
-          form.reset();
+          form.current.reset();
+
         },
         (error) => {
           console.log(error.text);
